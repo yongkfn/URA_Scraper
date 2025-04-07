@@ -26,13 +26,14 @@ jobs:
 
       - name: Run download script
         run: python download_vacant_sites.py
-
+    
       - name: Upload Excel file as artifact
         uses: actions/upload-artifact@v3
         with:
           name: ura-vacant-sites
           path: ura_land_sales_data/*.xlsx
-          retention-days: 7 # Keep files for 7 days
+          retention-days: 7
+        continue-on-error: true  # Add this line to prevent workflow failure
 
       - name: Commit and push if there are changes
         run: |
