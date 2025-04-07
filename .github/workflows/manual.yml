@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -27,13 +27,13 @@ jobs:
       - name: Run download script
         run: python ura_tracker_with_form.py
     
+            # To this:
       - name: Upload Excel file as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated to v4
         with:
           name: ura-vacant-sites
           path: ura_land_sales_data/*.xlsx
-          retention-days: 7
-        continue-on-error: true  # Add this line to prevent workflow failure
+          retention-days: 7 # Keep files for 7 days
 
       - name: Commit and push if there are changes
         run: |
