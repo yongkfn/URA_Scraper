@@ -24,26 +24,21 @@ URL = "https://www.ura.gov.sg/-/media/Corporate/Land-Sales/Past-Sales-Sites/ura-
 FORM_URL = "https://form.gov.sg/67ee3684e8ee3d46f1938396"
 
 # ===== CUSTOM XPATHS FOR FORM FIELDS =====
-# Fill in the exact XPaths for each form field below
-# You can obtain these using browser developer tools (F12) -> right-click element -> Copy -> Copy XPath
 FORM_XPATHS = {
     # Date fields
-    "date_of_launch": '//*[@id="67ee3e1c70f6b1adf869c0ef"]',  # XPath for the Date of Launch input field
-    "date_of_tender_closing": '//*[@id="67ee3e3c8f9e0a097696ff56"]',  # XPath for the Date of Tender Closing input field
-    "date_of_award": '//*[@id="67ee370ab6c1d008404f165f"]',  # XPath for the Date of Award input field
-    "location": '//*[@id="67ee370ab6c1d008404f1661"]',  # XPath for the Location input field
-    "type_of_development": '//*[@id="67ee43a970f6b1adf86b6cac"]',  # XPath for the Type of Development Allowed dropdown
-    # Text input fields
-
-    "lease_years": '//*[@id="67ee370ab6c1d008404f1663"]',  # XPath for the Lease (years) input field
-    "dev_code": '//*[@id="67ee370ab6c1d008404f1666"]',  # XPath for the Type of Devt Code input field
-    "site_area": '//*[@id="67ee370ab6c1d008404f1667"]',  # XPath for the Site Area (m2) input field
+    "date_of_launch": '//*[@id="67ee3e1c70f6b1adf869c0ef"]', 
+    "date_of_tender_closing": '//*[@id="67ee3e3c8f9e0a097696ff56"]', 
+    "date_of_award": '//*[@id="67ee370ab6c1d008404f165f"]',  
+    "location": '//*[@id="67ee370ab6c1d008404f1661"]', 
+    "type_of_development": '//*[@id="67ee43a970f6b1adf86b6cac"]', 
+    "lease_years": '//*[@id="67ee370ab6c1d008404f1663"]',
+    "dev_code": '//*[@id="67ee370ab6c1d008404f1666"]',
+    "site_area": '//*[@id="67ee370ab6c1d008404f1667"]', 
     "name_of_successful_tenderer": '//*[@id="67ee370ab6c1d008404f166f"]',
     "successful_tender_price": '//*[@id="67ee4e242f9579d157d348b7"]',
     
-    
     # Submit button
-    "submit_button": '//*[@id="root"]/div/div[2]/div[4]/div[1]/div[1]/form/div[2]/button'  # XPath for the Submit button
+    "submit_button": '//*[@id="root"]/div/div[2]/div[4]/div[1]/div[1]/form/div[2]/button'  
 }
 # =========================================
 
